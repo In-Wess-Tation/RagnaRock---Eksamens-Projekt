@@ -2,7 +2,6 @@
 {
     public class Exhibition
     {
-        static int idCounter = 0;
         public string Name { get; set; }
         public string ShortDescription { get; set; }
         public string Image { get; set; }

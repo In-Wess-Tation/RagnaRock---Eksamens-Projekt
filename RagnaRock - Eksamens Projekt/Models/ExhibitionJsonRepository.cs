@@ -7,9 +7,10 @@ namespace RagnaRock___Eksamens_Projekt.Models
     {
         List<Exhibition> exhibitions;
 
-        string path = @"C:\Users\Cupcake\OneDrive\Skrivebord\School\repos\RagnaRock - Eksamens Projekt\RagnaRock - Eksamens Projekt\Program.cs";
+        string path = @"C:\Users\Cupcake\OneDrive\Skrivebord\School\repos\RagnaRock - Eksamens Projekt\RagnaRock - Eksamens Projekt\Data\ExhibitionsFile.json";
         public ExhibitionJsonRepository()
         {
+            Debug.WriteÆLine("test");
             exhibitions = JsonReader.ReadFromFile(path);
         }
 
