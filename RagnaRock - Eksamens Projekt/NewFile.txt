@@ -1,0 +1,29 @@
+﻿{
+  "Exhibitions": [
+    {
+      "Name": "Rockens historie",
+      "Description": "En udforskning af rockmusikkens udvikling gennem årtierne.",
+      "Images": [
+        "rockens_historie_1.jpg",
+        "rockens_historie_2.jpg"
+      ],
+      "AudioFiles": [
+        "rockens_historie_lyd1.mp3",
+        "rockens_historie_lyd2.mp3"
+      ]
+    },
+    {
+      "Name": "Legenderne",
+      "Description": "En hyldest til de største rocklegender gennem tiden.",
+      "Images": [
+        "legenderne_1.jpg",
+        "legenderne_2.jpg"
+      ],
+      "AudioFiles": [
+        "legenderne_lyd1.mp3",
+        "legenderne_lyd2.mp3"
+      ]
+    }
+  ]
+
+}

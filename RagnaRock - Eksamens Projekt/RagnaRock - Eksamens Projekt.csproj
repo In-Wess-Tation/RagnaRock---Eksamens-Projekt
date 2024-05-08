@@ -7,4 +7,13 @@
     <RootNamespace>RagnaRock___Eksamens_Projekt</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Data\ExibitionJsonFile.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\ExibitionJsonFile" />
+    <None Remove="Data\NewFile.txt" />
+  </ItemGroup>
+
 </Project>

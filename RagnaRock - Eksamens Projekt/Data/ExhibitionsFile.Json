@@ -1,0 +1,36 @@
+﻿[
+
+  {
+    "Name": "Rockens historie",
+    "ShortDecscription": "Velkommen til en fortryllende rejse gennem musikkens historie på Rangarock Musicon!... ",
+    "Description": "Velkommen til en fortryllende rejse gennem musikkens historie på Rangarock Musicon! Træd ind i vores spændende udstilling, hvor du vil blive omsluttet af den rige arv af dansk og international musik. Fra ikoniske rocklegender til nutidens banebrydende artister – udforsk de smukke udstillinger, der fortæller historierne om dem, der formede lydens landskab gennem årtier. Gå på opdagelse i interaktive installationer, dyk ned i fascinerende memorabilia og lad dig inspirere af lyden og sjælen af musik. Velkommen til en verden af ​​lyd og lidenskab på Rangarock Musicon!",
+    "Images": "udstilling1.jpg",
+    "AudioFiles": "Balynt - Chase The Sundown.wav"
+  },
+  {
+    "Name": "Legenderne",
+    "ShortDecscription": "Træd ind i Ragnarock Musicons tempel for musikalsk legendarium...",
+    "Description": "Træd ind i Ragnarock Musicons tempel for musikalsk legendarium. Her hyldes ikonerne, der har formet generationer med deres toner og tordnende kreativitet. Oplev historierne bag rockens giganter, popens ikoner og de ukuelige rebelske stemmer, der har ændret musikkens gang. Gennem billeder, instrumenter og personlige fortællinger får du et unikt indblik i deres liv og arv. På Ragnarock Musicon lever musikkens legender videre i al deres magt og mystik.",
+    "Images": "udstilling2.jpg",
+    "AudioFiles": "Balynt - Tired.wav"
+  },
+  {
+    "Name": "Lyden gennem historien",
+    "ShortDecscription": "Ragnarock tager dig med på en tidsrejse gennem musikkens epokegørende øjeblikke...",
+    "Description": "Ragnarock tager dig med på en tidsrejse gennem musikkens epokegørende øjeblikke. Fra de rå rytmer af rock 'n' roll's fødsel til de elektriske strømme af punkens oprør. Udforsk musikkens evolution, som den afspejler samfundets forandringer og individets kreative udfoldelse. Gennem udstillinger, lydoptagelser og interaktive oplevelser inviteres du til at dykke ned i fortidens stemmer, bevægelser og revolutionerende lyde. På Ragnarock genoplives historien om musikkens uendelige kraft til at forbinde, inspirere og forandre verden.",
+    "Images": "udstilling3.jpg",
+    "AudioFiles": "Oliver Tray - Stay_105bpm.wav"
+  },
+  {
+    "Name": "Legenderne",
+    "ShortDecscription": "Oplev magien og mangfoldigheden af ​​musikinstrumenter på Ragnarock's instrumentudstilling...",
+    "Description": "Oplev magien og mangfoldigheden af ​​musikinstrumenter på Ragnarock's instrumentudstilling. Fra de velkendte strenges toner til de dunkende rytmer fra trommesættene – udforsk en verden af ​​lydskabelse og innovation. Dyk ned i historien bag hvert instrument, fra deres oprindelse til deres indflydelse på moderne musik. Gennem interaktive displays og lydprøver får du mulighed for at føle, røre og høre de forskellige instrumenters unikke karakter. Udstillingen på Ragnarock er en hyldest til musikkens mangfoldighed og instrumenternes evne til at forme lydlandskabet gennem tiderne.",
+    "Images": "udstilling4.jpg",
+    "AudioFiles": "stay safe prod jp.wav"
+  }
+
+
+
+
+
+]
