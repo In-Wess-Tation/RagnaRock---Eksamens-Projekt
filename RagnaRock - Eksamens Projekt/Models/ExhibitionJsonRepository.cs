@@ -1,4 +1,5 @@
 ﻿using RagnaRock___Eksamens_Projekt.Pages;
+using System.Diagnostics;
 using System.Formats.Asn1;
 
 namespace RagnaRock___Eksamens_Projekt.Models
@@ -10,7 +11,7 @@ namespace RagnaRock___Eksamens_Projekt.Models
         string path = @"C:\Users\Cupcake\OneDrive\Skrivebord\School\repos\RagnaRock - Eksamens Projekt\RagnaRock - Eksamens Projekt\Data\ExhibitionsFile.json";
         public ExhibitionJsonRepository()
         {
-            Debug.WriteÆLine("test");
+            Debug.WriteLine("test");
             exhibitions = JsonReader.ReadFromFile(path);
         }
 

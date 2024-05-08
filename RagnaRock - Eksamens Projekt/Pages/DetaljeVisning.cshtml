@@ -1,0 +1,37 @@
+﻿@page
+@model RagnaRock___Eksamens_Projekt.Pages.DetaljeVisningModel
+@{
+}
+
+@foreach (Exhibition item in Model.AllExhibitions)
+{
+<sectionn class="col-md-6 col-lg-4">
+    <article class="card my-3">
+
+
+        <article class="card-body">
+            <div>
+                <h3 class="card-title"><a href="#" class="text-secondary">@item.Name</a></h3>
+                <button>
+                </button>
+            </div>
+
+            <p class="card-text">@item.Description</p>
+            <img src="images/@item.Images" class="card-image-top w-75" alt="thumbnail">
+        </article>
+
+        <a asp-page-handler="Delete"
+           asp-route-id="@item.Id">
+            <span class="material-symbols-outlined">
+                delete
+            </span>
+        </a>
+
+    </article>
+</sectionn>
+            }
+
+
+
+
+

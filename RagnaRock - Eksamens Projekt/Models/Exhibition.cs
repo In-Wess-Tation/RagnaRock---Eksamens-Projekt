@@ -4,15 +4,19 @@
     {
         public string Name { get; set; }
         public string ShortDescription { get; set; }
-        public string Image { get; set; }
+        public string Description { get; set; }
+        public string Images { get; set; }
+        public string AudioFiles { get; set; }
         public int Id { get; set; }
 
 
-        public Exhibition(string name, string shortDiscription, string image, int id)
+        public Exhibition(string name, string shortDescription, string description, string images, string audioFiles, int id)
         {
             Name = name;
-            ShortDescription = shortDiscription;
-            Image = image;
+            ShortDescription = shortDescription;
+            Description = description;
+            Images = images;
+            AudioFiles = audioFiles;
             Id = id;
 
 

@@ -18,16 +18,22 @@
 
             @foreach (Exhibition item in Model.AllExhibitions)
             {
-                <div class="col-md-6 col-lg-4">
-                    <div class="card my-3">
+                <sectionn class="col-md-6 col-lg-4">
+                    <article class="card my-3">
 
 
-                        <div class="card-body">
-                            <h3 class="card-title"><a href="#" class="text-secondary">@item.Name</a></h3>
+                        <article class="card-body">
+                            <div>
+                                <h3 class="card-title"><a href="#" class="text-secondary">@item.Name</a></h3>
+                                <button>
+
+                                </button>
+                            </div>
+
                             <p class="card-text">@item.ShortDescription</p>
-
-                            <img src="images/@item.Image" class="card-image-top" alt="thumbnail">
-                        </div>
+                            <img src="images/@item.Images" class="card-image-top w-75" alt="thumbnail">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/DetajleVisning">Se fulde udstilling</a>
+                        </article>
 
                             <a asp-page-handler="Delete"
                                asp-route-id="@item.Id">
@@ -36,8 +42,8 @@
                                 </span>
                             </a>
                         
-                    </div>
-                </div>
+                    </article>
+                </sectionn>
             }
 
 

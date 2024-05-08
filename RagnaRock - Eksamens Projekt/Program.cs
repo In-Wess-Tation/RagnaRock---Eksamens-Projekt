@@ -1,3 +1,6 @@
+using RagnaRock___Eksamens_Projekt.Models;
+using RagnaRock___Eksamens_Projekt.Pages;
+
 namespace RagnaRock___Eksamens_Projekt
 {
     public class Program
@@ -8,6 +11,8 @@ namespace RagnaRock___Eksamens_Projekt
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddSingleton<IExhibitionRepository, ExhibitionJsonRepository>();
+
 
             var app = builder.Build();
 
