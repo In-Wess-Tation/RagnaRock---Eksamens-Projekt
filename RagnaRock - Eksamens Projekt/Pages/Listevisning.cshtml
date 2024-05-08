@@ -1,10 +1,49 @@
 ﻿@page
-@model RagnaRock___Eksamens_Projekt.Pages.ListevisningModel
+@using RagnaRock___Eksamens_Projekt.Pages.Models
+@model ListevisningModel
 @{
     ViewData["Title"] = "Udstillinger";
 }
 
 
 
+<section class="bg-light py-4 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>RagnaRocks Udstillinger</h1>
+            </div>
+
+
+
+            @foreach (Exhibition item in Model.AllExhibitions)
+            {
+                <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+
+
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#" class="text-secondary">@item.Name</a></h3>
+                            <p class="card-text">@item.ShortDescription</p>
+
+                            <img src="images/@item.Image" class="card-image-top" alt="thumbnail">
+                        </div>
+
+                            <a asp-page-handler="Delete"
+                               asp-route-id="@item.Id">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </a>
+                        
+                    </div>
+                </div>
+            }
+
+
+
+        </div>
+    </div>
+</section>
 
 
