@@ -22,20 +22,20 @@ namespace RagnaRock___Eksamens_Projekt.Models
             return exhibitions;
         }
 
-        public void Add(Exhibition e)
-        {
-            if (exhibitions != null)
-            {
-                exhibitions.Add(e);
-            }
-        }
-
+        /*      public void Add(Exhibition e)
+              {
+                  if (exhibitions != null)
+                  {
+                      exhibitions.Add(e);
+                  }
+              }*/
+/*
         public Exhibition Get(int id)
         {
             if (exhibitions != null)
                 return (exhibitions[exhibitions.FindIndex(e => e.Id == id)]);
             return null;
-        }
+        }*/
 
         public void Delete(int id)
         {

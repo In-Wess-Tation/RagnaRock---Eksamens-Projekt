@@ -1,7 +1,10 @@
 ﻿@page
-@model RagnaRock___Eksamens_Projekt.Pages.DetaljeVisningModel
+@using RagnaRock___Eksamens_Projekt.Models
+@model DetaljeVisningModel
 @{
+    ViewData["Title"] = "DetaljeVisning";
 }
+
 
 @foreach (Exhibition item in Model.AllExhibitions)
 {
@@ -19,13 +22,6 @@
             <p class="card-text">@item.Description</p>
             <img src="images/@item.Images" class="card-image-top w-75" alt="thumbnail">
         </article>
-
-        <a asp-page-handler="Delete"
-           asp-route-id="@item.Id">
-            <span class="material-symbols-outlined">
-                delete
-            </span>
-        </a>
 
     </article>
 </sectionn>

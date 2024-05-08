@@ -7,13 +7,13 @@ namespace RagnaRock___Eksamens_Projekt.Pages
 
 
 
-
+/*
         public void Add(Exhibition e);
 
 
 
 
-        public Exhibition Get(int id);
+        public Exhibition Get(int id);*/
 
 
 
