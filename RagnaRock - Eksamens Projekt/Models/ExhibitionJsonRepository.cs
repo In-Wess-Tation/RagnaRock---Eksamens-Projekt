@@ -29,13 +29,13 @@ namespace RagnaRock___Eksamens_Projekt.Models
                       exhibitions.Add(e);
                   }
               }*/
-/*
+
         public Exhibition Get(int id)
         {
             if (exhibitions != null)
                 return (exhibitions[exhibitions.FindIndex(e => e.Id == id)]);
             return null;
-        }*/
+        }
 
         public void Delete(int id)
         {
