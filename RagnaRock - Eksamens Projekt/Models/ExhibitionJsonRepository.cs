@@ -15,20 +15,13 @@ namespace RagnaRock___Eksamens_Projekt.Models
             exhibitions = JsonReader.ReadFromFile(path);
         }
 
-        //        public List<Animal> Animals { get => _animals; set => _animals = value; }
-
+       
         public List<Exhibition> GetAll()
         {
             return exhibitions;
         }
 
-        /*      public void Add(Exhibition e)
-              {
-                  if (exhibitions != null)
-                  {
-                      exhibitions.Add(e);
-                  }
-              }*/
+      
 
         public Exhibition Get(int id)
         {

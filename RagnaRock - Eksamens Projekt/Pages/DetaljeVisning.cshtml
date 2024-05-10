@@ -5,8 +5,9 @@
     ViewData["Title"] = "DetaljeVisning";
 }
 
+@* 
 
-(Exhibition item in Model.AllExhibitions)
+    @for (Exhibition i = Id; i < Model.AllExhibitions.Length; i++)
 {
 <sectionn class="col-md-6 col-lg-4">
     <article class="card my-3">
@@ -14,18 +15,24 @@
 
         <article class="card-body">
             <div>
-                <h3 class="card-title"><a href="#" class="text-secondary">@item.Name</a></h3>
+                <h3 class="card-title"><a href="#" class="text-secondary">@i.Name</a></h3>
                 <button>
                 </button>
             </div>
 
-            <p class="card-text">@item.Description</p>
-            <img src="images/@item.Images" class="card-image-top w-75" alt="thumbnail">
+            <p class="card-text">@i.Description</p>
+            <img src="images/@i.Images" class="card-image-top w-75" alt="thumbnail">
         </article>
 
     </article>
 </sectionn>
-            }
+           
+}
+ *@
+
+
+
+
 
 
 

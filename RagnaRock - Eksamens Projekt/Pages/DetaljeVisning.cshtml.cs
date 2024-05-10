@@ -7,10 +7,15 @@ namespace RagnaRock___Eksamens_Projekt.Pages
 {
     public class DetaljeVisningModel : PageModel
     {
+       
+
+/*
+
         private readonly ILogger<IndexModel> _logger;
-       /* public List<Exhibition> AllExhibitions { get; set; }*/
-       public Exhibition Exhibition { get; set; }
+       *//* public List<Exhibition> AllExhibitions { get; set; }*//*
+        public Exhibition Exhibition { get; set; }
         public readonly IExhibitionRepository _repo;
+
         public DetaljeVisningModel(IExhibitionRepository repo)
         {
             _repo = repo;
@@ -28,6 +33,6 @@ namespace RagnaRock___Eksamens_Projekt.Pages
         {
             _repo.Delete(id);
             return Redirect("Listevisning");
-        }
+        }*/
     }
 }
