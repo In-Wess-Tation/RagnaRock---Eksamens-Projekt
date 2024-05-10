@@ -13,6 +13,13 @@ namespace RagnaRock___Eksamens_Projekt
             builder.Services.AddRazorPages();
             builder.Services.AddSingleton<IExhibitionRepository, ExhibitionJsonRepository>();
 
+            builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", options =>
+            {
+                options.Cookie.Name = "MyCookieAuth";
+                options.LoginPath = "/Account/Login";
+                //options.AccessDeniedPath = "/Account/AccesDenied";
+                //options.ExpireTimeSpan = TimeSpan.FromSeconds(60);
+            });
 
             var app = builder.Build();
 
@@ -24,6 +31,8 @@ namespace RagnaRock___Eksamens_Projekt
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

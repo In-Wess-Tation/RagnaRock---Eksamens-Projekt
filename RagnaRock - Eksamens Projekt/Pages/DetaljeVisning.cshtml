@@ -5,30 +5,29 @@
     ViewData["Title"] = "DetaljeVisning";
 }
 
-@* 
 
-    @for (Exhibition i = Id; i < Model.AllExhibitions.Length; i++)
+@if (Model.AllExhibitions != null)
 {
-<sectionn class="col-md-6 col-lg-4">
-    <article class="card my-3">
-
-
-        <article class="card-body">
-            <div>
-                <h3 class="card-title"><a href="#" class="text-secondary">@i.Name</a></h3>
-                <button>
-                </button>
-            </div>
-
-            <p class="card-text">@i.Description</p>
-            <img src="images/@i.Images" class="card-image-top w-75" alt="thumbnail">
-        </article>
-
-    </article>
-</sectionn>
-           
+    @for (int i = 0; i < Model.AllExhibitions.Count; i++) 
+    {
+        <section class="col-md-6 col-lg-4">
+            <article class="card my-3">
+                <article class="card-body">
+                    <div>
+                        <h3 class="card-title"><a href="@Url.Action("Detail", "Exhibition", new { id = i })" class="text-secondary">@Model.AllExhibitions[i].Name</a></h3>
+                        <button>Click me</button> <!-- You can add text or icon here -->
+                    </div>
+                    <p class="card-text">@Model.AllExhibitions[i].Description</p>
+                    <img src="images/@Model.AllExhibitions[i].Images" class="card-image-top w-75" alt="thumbnail">
+                </article>
+            </article>
+        </section>
+    }
 }
- *@
+else
+{
+    <p>No exhibitions found.</p>
+}
 
 
 

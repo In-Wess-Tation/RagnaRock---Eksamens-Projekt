@@ -16,8 +16,4 @@
     <None Remove="Data\NewFile.txt" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Pages\Account\" />
-  </ItemGroup>
-
 </Project>

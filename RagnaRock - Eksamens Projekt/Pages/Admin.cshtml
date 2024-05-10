@@ -1,6 +1,6 @@
 ﻿@page
 @using RagnaRock___Eksamens_Projekt.Models
-@model ListevisningModel
+@model AdminModel
 @{
     ViewData["Title"] = "Udstillinger";
 }
@@ -26,7 +26,6 @@
                             <div class="d-flex">
                                 <h3 class="card-title"><a href="#" class="text-secondary">@item.Name</a></h3>
                                 <button>
-
                                 </button>
                             </div>
 
@@ -35,6 +34,13 @@
                             <br />
                             <a asp-page="/DetaljeVisning" asp-route-id="@item.Id">Se hele udsilling</a>
                         </article>
+
+                        <a asp-page-handler="Delete"
+                           asp-route-id="@item.Id">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </a>
 
                     </article>
                 </sectionn>
