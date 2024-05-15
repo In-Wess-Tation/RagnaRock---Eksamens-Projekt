@@ -6,23 +6,38 @@
 }
 
 
-@if (Model.AllExhibitions != null)
+@if (Model.Exhibition != null)
 {
-    @for (int i = 0; i < Model.AllExhibitions.Count; i++) 
-    {
+
+    <audio id="myAudio">
+        <source src="/soundfiles/@Model.Exhibition.Soundfiles" type="audio/mp3" />
+    </audio>
+   
         <section class="col-md-6 col-lg-4">
             <article class="card my-3">
                 <article class="card-body">
-                    <div>
-                        <h3 class="card-title"><a href="@Url.Action("Detail", "Exhibition", new { id = i })" class="text-secondary">@Model.AllExhibitions[i].Name</a></h3>
-                        <button>Click me</button> <!-- You can add text or icon here -->
+                    <div class="d-flex">
+                        <h3 class="card-title p-3"><a href="@Url.Action("Detail", "Exhibition")" class="text-secondary">@Model.Exhibition.Name</a></h3>
+                    <button onclick="playAudio()" type="button" class="rounded-circle">Afspil Lydfil</button> <!-- You can add text or icon here -->
                     </div>
-                    <p class="card-text">@Model.AllExhibitions[i].Description</p>
-                    <img src="images/@Model.AllExhibitions[i].Images" class="card-image-top w-75" alt="thumbnail">
+                    <p class="card-text">@Model.Exhibition.Description</p>
+                    <img src="images/@Model.Exhibition.Images" class="card-image-top w-75" alt="thumbnail">
                 </article>
             </article>
         </section>
-    }
+    
+
+        <script>
+            
+            var x = document.getElementById("myAudio"); 
+
+            function playAudio() 
+            {
+                x.play();
+            }
+        </script>
+
+
 }
 else
 {

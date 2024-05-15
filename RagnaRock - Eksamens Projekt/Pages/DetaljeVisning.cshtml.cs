@@ -9,7 +9,7 @@ namespace RagnaRock___Eksamens_Projekt.Pages
     public class DetaljeVisningModel : PageModel
     {
         private readonly ILogger<DetaljeVisningModel> _logger;
-        public List<Exhibition> AllExhibitions { get; private set; }
+        public Exhibition Exhibition { get; private set; }
         public readonly IExhibitionRepository _repo;
 
         public DetaljeVisningModel(IExhibitionRepository repo, ILogger<DetaljeVisningModel> logger)
@@ -21,7 +21,7 @@ namespace RagnaRock___Eksamens_Projekt.Pages
         public void OnGet(int id)
         {
             Debug.WriteLine("::::::::::::::::::::::::::::::" + id);
-            AllExhibitions = _repo.GetAll(); // Populate AllExhibitions with all exhibitions
+            Exhibition = _repo.Get(id); // Populate AllExhibitions with all exhibitions
         }
 
         // Handler til at håndtere sletning

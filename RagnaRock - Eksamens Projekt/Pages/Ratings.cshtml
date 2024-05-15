@@ -1,0 +1,118 @@
+﻿@page
+@using RagnaRock___Eksamens_Projekt.Models
+@model RatingsModel
+@{
+    ViewData["Title"] = "Se hvad vores anmeldelser";
+}
+
+
+
+@if (Model.AllRatings != null)
+{
+
+
+<h2>Giv os en anmeldelse!</h2>
+@* 
+<form method="post">
+    <div>
+        <label for="Bedømmelse">Bedømmelse (1-5):</label>
+        <input type="number" id="Bedømmelse" name="Bedømmelse" min="1" max="5" value="@Model.Bedømmelse" required />
+    </div>
+    <div>
+        <label for="Kommentar">Kommentar:</label>
+        <input type="text" id="Kommentar name="Kommentar" value="@Model.kommentar" required />
+    </div>
+    <div>
+
+        <button type="submit">Send bedømmelse</button>
+    </div>
+</form> *@
+
+<form method="post">
+    Ratings:
+   <input id="ratings" type="number" name= "ratings" min="1" max="5"/>
+    Comment:
+   <input id="comment" type="text" name="comment" />
+
+    <input type ="submit" value="submit" />
+    </form>
+
+
+    string path = @"C:\Users\Cupcake\OneDrive\Skrivebord\School\repos\RagnaRock - Eksamens Projekt\RagnaRock - Eksamens Projekt\Data\RatingsFile.json";
+
+
+
+    <script src="path"></script>
+    <script>
+        $(document).ready(function () {
+            $("form").submit(fanction() {
+                string message = {
+                    ratings: $("#ratings").val(),
+                    comment: $("#comment").val(),
+                    id: $("#id").val()
+                }
+
+                        $.ajax({
+                    url: "/Ratings",
+                    type: "POST",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(message),
+                    success: function () {
+                        console.log("success")
+                    },
+                });
+
+
+
+
+            })
+        });
+
+
+
+    </script>
+
+
+@* 
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <div>
+        <p>@Model.Message</p>
+    </div>
+}
+ *@
+
+
+
+
+@foreach (Rating item in Model.AllRatings)
+{
+    <sectionn class="col-md-6 col-lg-4">
+        <article class="card my-3">
+
+
+            <article class="card-body">
+                <div class="d-flex">
+                    <h3 class="card-title"><a href="#" class="text-secondary">@item.Ratings</a></h3>
+                    <p>@item.Comment</p>
+                  
+                </div>
+            </article>
+
+        </article>
+    </sectionn>
+    }
+
+
+
+
+
+}
+else
+{
+    <p>Ingen anmeleldser fundet...</p>
+}
+
+
+

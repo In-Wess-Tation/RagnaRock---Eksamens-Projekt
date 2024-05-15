@@ -12,6 +12,7 @@ namespace RagnaRock___Eksamens_Projekt
             // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddSingleton<IExhibitionRepository, ExhibitionJsonRepository>();
+            builder.Services.AddSingleton<IRatingRepository, RatingJsonRepository>();
 
             builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", options =>
             {
