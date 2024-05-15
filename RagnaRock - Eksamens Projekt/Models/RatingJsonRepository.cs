@@ -21,7 +21,13 @@ namespace RagnaRock___Eksamens_Projekt.Models
             return ratings;
         }
 
-
+   /*     public void Add(int id)
+        {
+            if (ratings != null)
+            {
+                ratings.Add(id);
+            }
+        }*/
 
         public Rating Get(int id)
         {
@@ -42,10 +48,10 @@ namespace RagnaRock___Eksamens_Projekt.Models
             }
         }
 
-
-
-
-
+     /*   Rating IRatingRepository.Add(int id)
+        {
+            throw new NotImplementedException();
+        }*/
 
     }
 }

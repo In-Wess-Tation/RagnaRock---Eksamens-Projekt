@@ -9,12 +9,9 @@ namespace RagnaRock___Eksamens_Projekt.Pages
 
         public Rating Get(int id);
 
-
-
-
         public void Delete(int id);
 
-
+   /*     public Rating Add(int id);*/
 
         public List<Rating> GetAll();
 

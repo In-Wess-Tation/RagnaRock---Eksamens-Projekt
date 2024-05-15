@@ -12,35 +12,42 @@
 
 
 <h2>Giv os en anmeldelse!</h2>
-@* 
-<form method="post">
-    <div>
-        <label for="Bedømmelse">Bedømmelse (1-5):</label>
-        <input type="number" id="Bedømmelse" name="Bedømmelse" min="1" max="5" value="@Model.Bedømmelse" required />
-    </div>
-    <div>
-        <label for="Kommentar">Kommentar:</label>
-        <input type="text" id="Kommentar name="Kommentar" value="@Model.kommentar" required />
-    </div>
-    <div>
-
-        <button type="submit">Send bedømmelse</button>
-    </div>
-</form> *@
 
 <form method="post">
-    Ratings:
-   <input id="ratings" type="number" name= "ratings" min="1" max="5"/>
-    Comment:
-   <input id="comment" type="text" name="comment" />
+    <div>
+        <label for="Ratings">Bedømmelse (1-5):</label>
+        <input type="number" id="Ratings" name="ratings" min="1" max="5" value="@Model.AllRatings.Ratings" required />
+    </div>
 
-    <input type ="submit" value="submit" />
-    </form>
+    <div>
+        <label for="Comment">Kommentar:</label>
+        <input type="text" id="Comment name="comment" value="@Model.AllRatings.Comment" required />
+    </div>
+
+    <div>
+        <label for="Id"></label>
+        <input type="hidden" id="Id" name="id" value="@Model.AllRatings.Id"/>
+    </div>
+
+    <div>
+
+        <button type="submit" value="Save">Send bedømmelse</button>
+    </div>
+</form>
 
 
-    string path = @"C:\Users\Cupcake\OneDrive\Skrivebord\School\repos\RagnaRock - Eksamens Projekt\RagnaRock - Eksamens Projekt\Data\RatingsFile.json";
+@* <form>
+    <p>Ratings:</p>
+    <input id="ratings" type="number" name="ratings" min="1" max="5" />
+    <p>Comment:</p>
+    <input id="comment" type="text" name="comment" />
 
+    <button asp-page-handler="Add">
+            asp-route-id="@Model.AllRatings.Id">
+    <span class="material-symbols-outlined">Add</span>
+    </button>
 
+</form>
 
     <script src="path"></script>
     <script>
@@ -71,17 +78,17 @@
 
 
 
-    </script>
+    </script> *@
 
 
-@* 
+
 @if (!string.IsNullOrEmpty(Model.Message))
 {
     <div>
         <p>@Model.Message</p>
     </div>
 }
- *@
+
 
 
 
