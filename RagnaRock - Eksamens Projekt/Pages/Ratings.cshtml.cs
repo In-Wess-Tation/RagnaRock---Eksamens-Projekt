@@ -70,17 +70,17 @@ namespace RagnaRock___Eksamens_Projekt.Pages
 
 
 
-        public IActionResult OnPost(int Ratings, string Comment, int Id string Message)
+        public IActionResult OnPost(int Ratings, string Comment, int Id /*string Message*/)
         {
             if (Ratings < 1 || Ratings > 5)
             {
-                Message = "Bedømmelsen skal være mellem 1 og 5.";
+                /*Message = "Bedømmelsen skal være mellem 1 og 5.";*/
                 return Page();
             }
 
             GemBedømmelseOgKommentar(Ratings, Comment, Id);
 
-            Message = "Bedømmelsen er gemt.";
+           /* Message = "Bedømmelsen er gemt.";*/
             Ratings = 0;
             Comment = string.Empty;
             Id = Id + 1;
@@ -90,7 +90,7 @@ namespace RagnaRock___Eksamens_Projekt.Pages
 
         private void GemBedømmelseOgKommentar(int ratings, string comment, int id)
         {
-
+            _repo.Add(new Rating(ratings, comment, id));
         }
 
 

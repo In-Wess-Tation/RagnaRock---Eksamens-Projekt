@@ -1,5 +1,6 @@
 ﻿using RagnaRock___Eksamens_Projekt.Pages;
 using System.Diagnostics;
+using System.Reflection.Metadata.Ecma335;
 
 namespace RagnaRock___Eksamens_Projekt.Models
 {
@@ -21,13 +22,14 @@ namespace RagnaRock___Eksamens_Projekt.Models
             return ratings;
         }
 
-   /*     public void Add(int id)
+        public void Add(Rating rating)
         {
             if (ratings != null)
             {
-                ratings.Add(id);
+                ratings.Add(rating);
+                RatingsJsonWriter.WriteToFile(path, ratings);
             }
-        }*/
+        }
 
         public Rating Get(int id)
         {
@@ -48,10 +50,8 @@ namespace RagnaRock___Eksamens_Projekt.Models
             }
         }
 
-     /*   Rating IRatingRepository.Add(int id)
-        {
-            throw new NotImplementedException();
-        }*/
+
+ 
 
     }
 }

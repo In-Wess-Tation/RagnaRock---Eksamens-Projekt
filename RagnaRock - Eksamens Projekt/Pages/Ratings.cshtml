@@ -2,7 +2,7 @@
 @using RagnaRock___Eksamens_Projekt.Models
 @model RatingsModel
 @{
-    ViewData["Title"] = "Se hvad vores anmeldelser";
+    ViewData["Title"] = "Se vores anmeldelser";
 }
 
 
@@ -16,22 +16,22 @@
 <form method="post">
     <div>
         <label for="Ratings">Bedømmelse (1-5):</label>
-        <input type="number" id="Ratings" name="ratings" min="1" max="5" value="@Model.AllRatings.Ratings" required />
+        <input type="number" id="Ratings" name="ratings" min="1" max="5" required />
     </div>
 
     <div>
         <label for="Comment">Kommentar:</label>
-        <input type="text" id="Comment name="comment" value="@Model.AllRatings.Comment" required />
+        <input type="text" id="Comment" name="comment"  required />
     </div>
 
     <div>
         <label for="Id"></label>
-        <input type="hidden" id="Id" name="id" value="@Model.AllRatings.Id"/>
+        <input type="hidden" id="Id" name="id" />
     </div>
 
     <div>
 
-        <button type="submit" value="Save">Send bedømmelse</button>
+        <button type="submit" value="Save">Indsend bedømmelse</button>
     </div>
 </form>
 
@@ -82,12 +82,12 @@
 
 
 
-@if (!string.IsNullOrEmpty(Model.Message))
+@* @if (!string.IsNullOrEmpty(Model.AllRatings.Message))
 {
     <div>
-        <p>@Model.Message</p>
+        <p>@Model.AllRatings.Message</p>
     </div>
-}
+} *@
 
 
 
@@ -98,13 +98,9 @@
     <sectionn class="col-md-6 col-lg-4">
         <article class="card my-3">
 
-
             <article class="card-body">
-                <div class="d-flex">
-                    <h3 class="card-title"><a href="#" class="text-secondary">@item.Ratings</a></h3>
+                    <h3 class="card-title">Rating: @item.Ratings</h3>
                     <p>@item.Comment</p>
-                  
-                </div>
             </article>
 
         </article>

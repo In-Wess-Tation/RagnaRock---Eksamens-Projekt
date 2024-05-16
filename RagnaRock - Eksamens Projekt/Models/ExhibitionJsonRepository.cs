@@ -42,6 +42,9 @@ namespace RagnaRock___Eksamens_Projekt.Models
             }
         }
 
-
+        public void Add(Exhibition e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

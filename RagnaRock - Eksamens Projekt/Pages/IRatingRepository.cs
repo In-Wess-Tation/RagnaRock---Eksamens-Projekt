@@ -11,7 +11,7 @@ namespace RagnaRock___Eksamens_Projekt.Pages
 
         public void Delete(int id);
 
-   /*     public Rating Add(int id);*/
+        public void Add(Rating rating);
 
         public List<Rating> GetAll();
 

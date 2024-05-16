@@ -7,9 +7,9 @@ namespace RagnaRock___Eksamens_Projekt.Pages
 
 
 
-        /*
+        
                 public void Add(Exhibition e);
-        */
+        
 
 
 
