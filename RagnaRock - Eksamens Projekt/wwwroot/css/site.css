@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -13,10 +13,45 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+header {
+    background-color: black;
+    color: white;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: black;
+    color: white;
 }
+
+footer {
+    background-color: black;
+    color: white; 
+}
+
+h1 {
+    color: gold;
+}
+
+h2, h3 {
+    color: green;
+}
+
+a {
+    color: gold; 
+    text-decoration: none;
+}
+
+.nav-link {
+    color: palegoldenrod;
+}
+
+button {
+    color: palegoldenrod;
+    background-color: darkgray;
+}
+

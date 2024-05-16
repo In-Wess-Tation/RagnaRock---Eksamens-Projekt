@@ -7,7 +7,7 @@
 
 
 
-<section class="bg-light py-4 my-5">
+<section class="py-4 my-5">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -23,14 +23,9 @@
 
 
                         <article class="card-body">
-                            <div class="d-flex">
                                 <h3 class="card-title"><a href="#" class="text-secondary">@item.Name</a></h3>
-                                <button>
 
-                                </button>
-                            </div>
-
-                            <p class="card-text">@item.ShortDescription</p>
+                            <p class="card-text text-black-50">@item.ShortDescription</p>
                             <img src="images/@item.Images" class="card-image-top w-75" alt="thumbnail">
                             <br />
                             <a asp-page="/DetaljeVisning" asp-route-id="@item.Id">Se hele udsilling</a>

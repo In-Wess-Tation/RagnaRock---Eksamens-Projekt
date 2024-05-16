@@ -85,7 +85,7 @@ namespace RagnaRock___Eksamens_Projekt.Pages
             Comment = string.Empty;
             Id = Id + 1;
 
-            return Page();
+            return Redirect("/Ratings");
         }
 
         private void GemBedømmelseOgKommentar(int ratings, string comment, int id)
