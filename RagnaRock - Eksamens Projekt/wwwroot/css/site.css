@@ -18,15 +18,16 @@ html {
 }
 
 header {
-    background-color: black;
+    background-color: black);
     color: white;
 }
 
 body {
     margin-bottom: 60px;
-    background-color: black;
+    background-image: url("/images/BG.png");
     color: white;
 }
+
 
 footer {
     background-color: black;
@@ -34,7 +35,8 @@ footer {
 }
 
 h1 {
-    color: gold;
+    color: palegoldenrod;
+    
 }
 
 h2, h3 {
@@ -42,7 +44,7 @@ h2, h3 {
 }
 
 a {
-    color: gold; 
+    color: darkgoldenrod; 
     text-decoration: none;
 }
 
@@ -55,3 +57,6 @@ button {
     background-color: darkgray;
 }
 
+img {
+    border: 5px dotted #555;
+}
