@@ -5,6 +5,14 @@
     "Description": "Tr\u00E6d ind i Ragnarock Musicons tempel for musikalsk legendarium. Her hyldes ikonerne, der har formet generationer med deres toner og tordnende kreativitet. Oplev historierne bag rockens giganter, popens ikoner og de ukuelige rebelske stemmer, der har \u00E6ndret musikkens gang. Gennem billeder, instrumenter og personlige fort\u00E6llinger f\u00E5r du et unikt indblik i deres liv og arv. P\u00E5 Ragnarock Musicon lever musikkens legender videre i al deres magt og mystik.",
     "Images": "udstilling1.jpg",
     "Soundfiles": "AudioFile1.mp3",
+    "Id": 1
+  },
+  {
+    "Name": "Rockens historie",
+    "ShortDescription": "En udforskning af rockens udvikling gennem \u00E5rtierne...",
+    "Description": "Tr\u00E6d ind i Ragnarock Musicons tempel for musikalsk legendarium. Her hyldes ikonerne, der har formet generationer med deres toner og tordnende kreativitet. Oplev historierne bag rockens giganter, popens ikoner og de ukuelige rebelske stemmer, der har \u00E6ndret musikkens gang. Gennem billeder, instrumenter og personlige fort\u00E6llinger f\u00E5r du et unikt indblik i deres liv og arv. P\u00E5 Ragnarock Musicon lever musikkens legender videre i al deres magt og mystik.",
+    "Images": "udstilling1.jpg",
+    "Soundfiles": "AudioFile1.mp3",
     "Id": 2
   },
   {
@@ -20,7 +28,15 @@
     "ShortDescription": "Tr\u00E6d ind i Ragnarock Musicons tempel for musikalsk legendarium...",
     "Description": "Tr\u00E6d ind i Ragnarock Musicons tempel for musikalsk legendarium. Her hyldes ikonerne, der har formet generationer med deres toner og tordnende kreativitet. Oplev historierne bag rockens giganter, popens ikoner og de ukuelige rebelske stemmer, der har \u00E6ndret musikkens gang. Gennem billeder, instrumenter og personlige fort\u00E6llinger f\u00E5r du et unikt indblik i deres liv og arv. P\u00E5 Ragnarock Musicon lever musikkens legender videre i al deres magt og mystik.",
     "Images": "udstilling2.png",
-    "Soundfiles": "AudioFile2.mp3v",
+    "Soundfiles": "AudioFile2.mp3",
+    "Id": 4
+  },
+  {
+    "Name": "Legenderne",
+    "ShortDescription": "Tr\u00E6d ind i Ragnarock Musicons tempel for musikalsk legendarium...",
+    "Description": "Tr\u00E6d ind i Ragnarock Musicons tempel for musikalsk legendarium. Her hyldes ikonerne, der har formet generationer med deres toner og tordnende kreativitet. Oplev historierne bag rockens giganter, popens ikoner og de ukuelige rebelske stemmer, der har \u00E6ndret musikkens gang. Gennem billeder, instrumenter og personlige fort\u00E6llinger f\u00E5r du et unikt indblik i deres liv og arv. P\u00E5 Ragnarock Musicon lever musikkens legender videre i al deres magt og mystik.",
+    "Images": "udstilling2.png",
+    "Soundfiles": "AudioFile2.mp3",
     "Id": 5
   },
   {

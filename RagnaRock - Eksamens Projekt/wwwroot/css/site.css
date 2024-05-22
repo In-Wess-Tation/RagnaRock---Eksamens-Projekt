@@ -39,8 +39,12 @@ h1 {
     
 }
 
-h2, h3 {
-    color: green;
+h2 {
+    color: gold;
+}
+
+h3 {
+    color: darkgoldenrod;
 }
 
 a {
@@ -53,10 +57,10 @@ a {
 }
 
 button {
-    color: palegoldenrod;
-    background-color: darkgray;
+    color: black;
+    background-color: palegoldenrod;
 }
 
-img {
-    border: 5px dotted #555;
+.DetaljeImage {
+    width: 40rem;
 }

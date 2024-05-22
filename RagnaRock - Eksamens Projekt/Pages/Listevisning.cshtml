@@ -19,14 +19,14 @@
             @foreach (Exhibition item in Model.AllExhibitions)
             {
                 <sectionn class="col-md-6 col-lg-4">
-                    <article class="card my-3">
+                    <article class="card my-3 d-grid">
 
 
-                        <article class="card-body">
+                        <article class="card-body col">
                                 <h3 class="card-title"><a href="#" class="text-secondary">@item.Name</a></h3>
 
                             <p class="card-text text-black-50">@item.ShortDescription</p>
-                            <img src="images/@item.Images" class="card-image-top w-75" alt="thumbnail">
+                            <img src="images/@item.Images" class="card-image-top w-75" alt="udstillinger">
                             <br />
                             <a asp-page="/DetaljeVisning" asp-route-id="@item.Id">Se hele udsilling</a>
                         </article>

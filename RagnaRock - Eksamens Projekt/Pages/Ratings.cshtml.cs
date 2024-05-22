@@ -31,44 +31,6 @@ namespace RagnaRock___Eksamens_Projekt.Pages
 
         }
 
-        /*  public void OnPost(string json)
-          {
-              Console.WriteLine(json);
-          }
-
-          public IActionResult Add(Rating ratings)
-          {
-              _repo.Add(ratings);
-              return Redirect("Rating");
-          }
-  */
-        /*
-
-                DatabaseContext _Context; 
-                public RatingsModel(DatabaseContext databaseContext)
-                {
-                    _Context = databaseContext;
-                }
-
-
-                public ActionResult OnPost()
-                {
-                    Rating rating = AllRatings[0];
-                    if (rating != null)
-                    {
-                        return Page();
-                    }
-
-                    rating.Id = 0;
-                    var result = _Context.Add(rating);
-                    _Context.SaveChanges();
-                }
-
-        */
-
-
-
-
 
         public IActionResult OnPost(int Ratings, string Comment, int Id /*string Message*/)
         {
@@ -92,32 +54,6 @@ namespace RagnaRock___Eksamens_Projekt.Pages
         {
             _repo.Add(new Rating(ratings, comment, id));
         }
-
-
-
-
-
-
-
-
-        /*    protected void GemBedømmelseOgKommentar(object sender, EventArgs e, int ratings, string comment, int id)
-            {
-                var pr = new
-                {
-                    AllRatings = new[]
-                    {
-                new Rating
-                {
-                    Ratings = ratings;
-                    Comment = comment;
-                    Id = id;
-                }
-                    }
-                };
-
-                string json = JsonConvert.SerializeObject(pr, Formatting.Indented);
-                System.IO.File.WriteAllText(@"C:\Users\Cupcake\OneDrive\Skrivebord\School\repos\RagnaRock - Eksamens Projekt\RagnaRock - Eksamens Projekt\Data\RatingsFile.json", json);
-            }*/
 
 
 
