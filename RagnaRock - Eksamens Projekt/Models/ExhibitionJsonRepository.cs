@@ -41,10 +41,15 @@ namespace RagnaRock___Eksamens_Projekt.Models
                 JsonWriter.WriteToFile(path, exhibitions);
             }
         }
-
-        public void Add(Exhibition e)
+        public void Add(Exhibition exhibition)
         {
-            throw new NotImplementedException();
+            if (exhibitions != null)
+            {
+                exhibitions.Add(exhibition);
+                JsonWriter.WriteToFile(path, exhibitions);
+            }
+
         }
+
     }
 }
