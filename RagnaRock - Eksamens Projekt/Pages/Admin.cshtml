@@ -14,50 +14,7 @@
                 <h1>RagnaRocks Udstillinger</h1>
             </div>
 
-             <section>
-                <h2>Udfyld form</h2>
-                
-                <form method="post" enctype="multipart/form-data" asp-page-handler="Save">
-
-
-                    <div>
-                        <label for="Name">Udfyld navn af udstilling</label>
-                        <input type="text" id="Name" name="name" required/>
-                    </div>
-
-                    <div>
-                    <label for="ShortDescription">Udfyld beskrivelse</label>
-                        <input type="text" id="ShortDescription" name="shortDescription" required />
-                    </div>
-                    <div>
-                        <label for="Description">Udfyld beskrivelse</label>
-                        <input type="text" id="Description" name="description" required />
-                    </div>
-                    <div>
-                        <label for="Images">Indsæt billede</label>
-                        <input type="file" id="Images" name="ImageFile" required />
-                        
-                    </div>
-                    <div>
-                        <label for="SoundFiles">Indsæt lydfil</label>
-                        <input type="file" id="SoundFiles" name="soundFiles" />
-                    </div>
-                    <div>
-                        <button type="submit" value="Save">Indsend udstilling</button>
-                    </div>
-
-
-
-
-
-
-                </form>
-                @if (Model.Message !=null)
-                {
-                    <div class="alert alert-info">@Model.Message</div>
-                }
-            </section>
-
+           
 
 
             @foreach (Exhibition item in Model.AllExhibitions)
@@ -92,4 +49,52 @@
     </div>
 </section>
 
+
+
+
+
+<section class="p-4 container">
+    <h1 class="">Opret ny udstilling </h1>
+
+    <form method="post" class="w-75" enctype="multipart/form-data" asp-page-handler="Save">
+
+        <div class="p-2">
+            <label class="mb-0 mr-2" for="Name">Udfyld navn af udstilling</label>
+            <input class="form-control ml-2" type="text" id="Name" name="name" required />
+        </div>
+
+        <div class="p-2">
+            <label class="mb-0 mr-2" for="ShortDescription">Udfyld kort beskrivelse</label>
+            <input class="form-control ml-2" type="text" id="ShortDescription" name="shortDescription" required />
+        </div>
+        <div class="p-2">
+            <label class="mb-0 mr-2" for="Description">Udfyld længere beskrivelse</label>
+            <input class="form-control ml-2" type="text" id="Description" name="description" required />
+        </div>
+        <div class="p-2">
+            <label class="mb-0 mr-2" for="Images">Indsæt billede</label>
+            <input class="form-control ml-2" type="file" id="Images" name="ImageFile" required />
+
+        </div>
+        <div class="p-2">
+            <label class="mb-0 mr-2" for="SoundFiles">Indsæt lydfil</label>
+            <input class="form-control ml-2" type="file" id="SoundFiles" name="soundFiles" />
+        </div>
+
+
+        <div>
+            <button class="text-black px-lg-3 mx-lg-2" type="submit" value="Save">Indsend udstilling</button>
+        </div>
+
+
+
+
+    </form>
+    @if (Model.Message != null)
+    {
+        <div class="alert alert-info">@Model.Message</div>
+    }
+
+
+</section>
 

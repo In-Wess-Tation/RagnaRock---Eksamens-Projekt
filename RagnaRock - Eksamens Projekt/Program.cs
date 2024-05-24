@@ -18,8 +18,11 @@ namespace RagnaRock___Eksamens_Projekt
             {
                 options.Cookie.Name = "MyCookieAuth";
                 options.LoginPath = "/Account/Login";
-                //options.AccessDeniedPath = "/Account/AccesDenied";
-                //options.ExpireTimeSpan = TimeSpan.FromSeconds(60);
+                options.AccessDeniedPath = "/Account/AccesDenied";
+                options.ExpireTimeSpan = TimeSpan.FromSeconds(60);
+                
+
+                
             });
 
             var app = builder.Build();

@@ -33,9 +33,11 @@ namespace RagnaRock___Eksamens_Projekt.Pages
             return Redirect("/Admin");
         }
 
+
+
+
         public async Task<IActionResult> OnPostSave(string Name, string ShortDescription, string Description, string Images, string SoundFiles, int Id)
         {
-            Debug.WriteLine("***" + ImageFile.FileName);
 
             SaveExhibition(Name, ShortDescription, Description, ImageFile.FileName, SoundFiles, Id);
 
@@ -44,9 +46,6 @@ namespace RagnaRock___Eksamens_Projekt.Pages
             var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
             var uniqueFileName = Path.GetFileName(ImageFile.FileName);
             var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-            Debug.WriteLine("---" + filePath);
-
 
 
             using (var fileStream = new FileStream(filePath, FileMode.Create))

@@ -12,6 +12,7 @@ namespace RagnaRock___Eksamens_Projekt.Pages
         private readonly ILogger<IndexModel> _logger;
         public List<Exhibition> AllExhibitions { get; set; }
         public readonly IExhibitionRepository _repo;
+
         public ListevisningModel(IExhibitionRepository repo)
         {
             _repo = repo;

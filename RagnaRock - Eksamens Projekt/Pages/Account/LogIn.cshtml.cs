@@ -20,7 +20,7 @@ namespace RagnaRock___Eksamens_Projekt.Pages.Account
             if (!ModelState.IsValid) return Page();
 
            
-            if (Credential.UserName == "admin" && Credential.Password == "password")
+            if (Credential.UserName == "Admin" && Credential.Password == "Fuck321")
             {
                 var claims = new List<Claim>
                 {

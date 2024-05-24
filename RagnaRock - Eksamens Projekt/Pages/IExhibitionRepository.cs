@@ -2,27 +2,16 @@
 
 namespace RagnaRock___Eksamens_Projekt.Pages
 {
+    //Interface
     public interface IExhibitionRepository
-    {
-
-
-
+    { 
+      public void Add(Exhibition e);
         
-                public void Add(Exhibition e);
-        
+      public Exhibition Get(int id);
 
+      public void Delete(int id);
 
-
-        public Exhibition Get(int id);
-
-
-
-
-        public void Delete(int id);
-
-
-
-        public List<Exhibition> GetAll();
+      public List<Exhibition> GetAll();
 
     }
 }
